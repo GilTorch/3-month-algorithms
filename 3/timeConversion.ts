@@ -1,4 +1,4 @@
-function timeConversion(s: string): string {
+const timeConversion = (s: string): string =>  {
     const splitTime = s.split(":");
     const hours = splitTime[0];
     const minutes = splitTime[1];
@@ -6,10 +6,12 @@ function timeConversion(s: string): string {
     const isAM = s.includes("AM");
     const isPM = !isAM;
 
-    let finalHours = hours
+    let finalHours = hours;
+
     if(hours === "12" && isAM){
         finalHours = "00"
     }
+
     if(hours === "12" && isPM){
         finalHours = "12"
     }
