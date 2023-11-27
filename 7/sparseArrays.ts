@@ -3,14 +3,15 @@ function matchingStrings(strings: string[], queries: string[]): number[]{
 
     const frequencyOfOccurences: number[] = [];
 
-    strings.forEach(string => {
-        queries.forEach((query,index) => {
-            frequencyOfOccurences[index] = 0;
+    queries.forEach((query,index) => {
+        frequencyOfOccurences[index] = 0;
+        strings.forEach((string) => {
             if(query === string){
                 frequencyOfOccurences[index]++;
             }
         })
     })
+
 
     return frequencyOfOccurences;
 }
