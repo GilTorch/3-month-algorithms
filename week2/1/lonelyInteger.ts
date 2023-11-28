@@ -19,11 +19,7 @@ function lonelyinteger(a: number[]): number {
             uniqueNumber = parseInt(aNumber);
             break;
         }
-
     }
-
-    console.log(frequencyOfOccurences)
-
     return uniqueNumber;
 
 }
