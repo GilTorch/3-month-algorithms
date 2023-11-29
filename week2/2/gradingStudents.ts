@@ -5,7 +5,6 @@ const gradingStudents = (grades: number[]): number[] => {
     const finalGrades: number[] = [];
 
     for(let i = 0; i < grades.length; i++){
-        console.log(grades[i]);
         const currentGrade = grades[i]
         if(currentGrade < 38){
             finalGrades.push(currentGrade);
