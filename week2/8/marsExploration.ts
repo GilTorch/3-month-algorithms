@@ -1,6 +1,6 @@
 // Hackerrank challenge: https://www.hackerrank.com/challenges/three-month-preparation-kit-mars-exploration/problem?isFullScreen=true&h_l=interview&playlist_slugs%5B%5D=preparation-kits&playlist_slugs%5B%5D=three-month-preparation-kit&playlist_slugs%5B%5D=three-month-week-two
 
-const marsExploration = (s) => {
+const marsExploration = (s: string):number => {
 
     let lettersChangedCount = 0; 
     const howManySOS = s.length / 3;
